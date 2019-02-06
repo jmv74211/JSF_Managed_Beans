@@ -1,4 +1,4 @@
-# Manage Beans básico en Java
+# JSF-Managed Beans básico en Java
 ## Autor: Jonathan Martín Valera
 ### Repositorio creado para la asignatura de *Desarrollo de software basado en componentes y servicios* en el máster de ingeniería informática en Granada
 #### Fecha de realización: Noviembre 2018

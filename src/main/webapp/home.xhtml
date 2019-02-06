@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Práctica 1 DSS</title>
+	</h:head>
+	
+	<h:body>
+		<h:panelGroup layout="block" style="width:500px;height:250px;margin:0 auto;text-align:center;background-color:#{indexBean.colorPanelControl}">
+			<h:form>
+				<h2>&nbsp;</h2>
+				<h2 id="textoEstadoMotor" 
+					style="border-bottom :2px solid grey;color:#{indexBean.colorEstadoMotor};padding-bottom:5px;">#{indexBean.textoEstadoMotor}</h2>
+				
+				<h:commandButton id="botonEncenderApagar" value="#{indexBean.textoBotonEncenderApagar}" 
+					style="padding:15px;font-weight:bold;color:#{indexBean.colorTextoBotonEncenderApagar}"
+				 	actionListener="#{indexBean.accionBotonEncenderApagar}"/>
+				
+	
+				<h:commandButton id="botonAcelerarFrenar" value="#{indexBean.textoBotonAcelerarFrenar}" 
+					style="padding:15px;font-weight:bold;margin-left:25px;color:#{indexBean.colorTextoBotonAcelerarFrenar}"
+				 	actionListener="#{indexBean.accionBotonAcelerarFrenar}"/> 
+				 	
+				 <p style="background-color:lightGrey;color:red;font-weight:bold;">#{indexBean.textoAyuda}</p>
+				
+			</h:form>
+		</h:panelGroup>
+	</h:body>
+</html>
